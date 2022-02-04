@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h2 style="margin-left: 100px">Software Order Form</h2>
+      <!--3 diva su malo drugacija nego sto se trazilo, jer nisam umio da ubacim License details kao na slici-->
+      <div
+        style="
+          border-radius: 2px;
+          border: solid black 1px;
+          width: 600px;
+          margin-left: 100px;
+          padding-inline-end: 0in;
+        "
+      >
+        <ul>
+          <li>
+            <label for="email">Email adress</label>
+            <input type="email" name="email" id="email" required />
+          </li>
+          <li>
+            <label for="url">Website</label>
+            <input
+              required
+              type="url"
+              name="url"
+              id="url"
+              placeholder="https://example.com"
+            />
+          </li>
+          <li>
+            <label for="licence">Number of licences</label>
+            <input
+              required
+              type="number"
+              name="licence"
+              id="licence"
+              placeholder="How many to buy(1-10)"
+            />
+          </li>
+        </ul>
+      </div>
+      <div
+        style="
+          border: solid black 1px;
+          width: 600px;
+
+          margin-left: 100px;
+          margin-bottom: 10px;
+          margin-top: 10px;
+          border-radius: 2px;
+        "
+      >
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="First Last"
+            />
+          </li>
+          <li>
+            <label for="url">Adress</label>
+            <textarea
+              cols="20"
+              rows="3"
+              required
+              placeholder="House number, street, sity, state"
+            ></textarea>
+          </li>
+          <li>
+            <label for="postal">Postal code</label>
+            <input
+              required
+              type="number"
+              name="postal"
+              id="postal"
+              placeholder="Postal code or zip code"
+            />
+          </li>
+          <li>
+            <label>Country</label>
+            <select name="country" id="country">
+              <option>USA</option>
+              <option>Austria</option>
+              <option>Kongo</option>
+              <option>Nepal</option>
+              <option>New Zeland</option>
+            </select>
+          </li>
+          <li>
+            <label for="phone">Phone(optional)</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Include country prefix e.g"
+            />
+          </li>
+        </ul>
+      </div>
+      <div
+        style="
+          border-radius: 2px;
+          border: solid black 1px;
+          width: 600px;
+          margin-left: 100px;
+          padding-inline-end: 0in;
+        "
+      >
+        <ul>
+          <li>
+            <label for="card">Card number</label>
+            <input
+              required
+              type="number"
+              name="card"
+              id="card"
+              placeholder="As shown on the format of "
+            />
+          </li>
+          <li>
+            <label for="cvv">CVV code</label>
+            <input
+              required
+              type="number"
+              name="cvv"
+              id="cvv"
+              placeholder="3-digit number on back of"
+              max="999"
+            />
+          </li>
+          <li>
+            <label for="date">Expiry date</label>
+            <input
+              required
+              type="number"
+              name="date"
+              id="date"
+              placeholder="YYYY-MM"
+            />
+          </li>
+        </ul>
+      </div>
+      <input
+        type="submit"
+        name="order"
+        id="order"
+        value="Place Your Order"
+        style="border-radius: 20px; margin-left: 100px"
+      />
+    </form>
+  </body>
+</html>
