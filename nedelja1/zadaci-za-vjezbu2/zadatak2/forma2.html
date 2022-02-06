@@ -5,20 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      form {
+        margin: auto;
+        width: 800px;
+      }
+    </style>
   </head>
   <body>
     <form>
       <h2 style="margin-left: 100px">Software Order Form</h2>
       <!--3 diva su malo drugacija nego sto se trazilo, jer nisam umio da ubacim License details kao na slici-->
-      <div
-        style="
-          border-radius: 2px;
-          border: solid black 1px;
-          width: 600px;
-          margin-left: 100px;
-          padding-inline-end: 0in;
-        "
-      >
+      <fieldset>
+        <legend>License details</legend>
         <ul>
           <li>
             <label for="email">Email adress</label>
@@ -45,18 +44,9 @@
             />
           </li>
         </ul>
-      </div>
-      <div
-        style="
-          border: solid black 1px;
-          width: 600px;
-
-          margin-left: 100px;
-          margin-bottom: 10px;
-          margin-top: 10px;
-          border-radius: 2px;
-        "
-      >
+      </fieldset>
+      <fieldset>
+        <legend>Billing details</legend>
         <ul>
           <li>
             <label for="name">Name</label>
@@ -69,8 +59,10 @@
             />
           </li>
           <li>
-            <label for="url">Adress</label>
+            <label for="adress">Adress</label>
             <textarea
+              id="adress"
+              name="adress"
               cols="20"
               rows="3"
               required
@@ -107,16 +99,9 @@
             />
           </li>
         </ul>
-      </div>
-      <div
-        style="
-          border-radius: 2px;
-          border: solid black 1px;
-          width: 600px;
-          margin-left: 100px;
-          padding-inline-end: 0in;
-        "
-      >
+      </fieldset>
+      <fieldset>
+        <legend>Payment details</legend>
         <ul>
           <li>
             <label for="card">Card number</label>
@@ -150,13 +135,13 @@
             />
           </li>
         </ul>
-      </div>
+      </fieldset>
       <input
         type="submit"
         name="order"
         id="order"
         value="Place Your Order"
-        style="border-radius: 20px; margin-left: 100px"
+        style="border-radius: 20px"
       />
     </form>
   </body>
